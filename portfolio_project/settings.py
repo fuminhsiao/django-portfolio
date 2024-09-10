@@ -73,7 +73,9 @@ TEMPLATES = [
         },
     },
 ]
-
+CORS_ALLOWED_ORIGINS = [
+    'https://fuminhsiao.github.io/portfolio/',  # 允许的前端 URL
+]
 WSGI_APPLICATION = 'portfolio_project.wsgi.application'
 
 
@@ -86,8 +88,8 @@ WSGI_APPLICATION = 'portfolio_project.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
-DATABASES ={
-    "default": dj_database_url.parse(os.environ.get("DATABASE_URL"))
+DATABASES = {
+    "default": dj_database_url.parse(os.environ.get("DATABASE_URL", "sqlite:///db.sqlite3"))
 }
 
 # Password validation
