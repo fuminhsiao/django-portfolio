@@ -73,9 +73,8 @@ TEMPLATES = [
         },
     },
 ]
-CORS_ALLOWED_ORIGINS = [
-    'https://fuminhsiao.github.io/portfolio/',  # 允许的前端 URL
-]
+CORS_ALLOW_ALL_ORIGINS = True
+
 WSGI_APPLICATION = 'portfolio_project.wsgi.application'
 
 
