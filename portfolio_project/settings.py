@@ -142,7 +142,7 @@ AWS_S3_SIGNATURE_VERSION = 's3v4'
 AWS_DEFAULT_ACL = 'public-read'
 
 # 媒體文件的 URL
-MEDIA_URL = f'https://ru040708-portfolio.s3.amazonaws.com/'
+MEDIA_URL = f'https://ru040708-portfolio.s3.us-east-2.amazonaws.com/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
